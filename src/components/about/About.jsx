@@ -19,26 +19,16 @@ const About = () => {
         </div>
         <div className="about_content">
           <div className="about_cards">
-            <article className='about_card'>
-              <FaAward className='about_icon'/>
-              <h5>Experience</h5>
-              <small>3+ Years</small>
-            </article>
-            <article className='about_card'>
-              <FiUsers className='about_icon'/>
-              <h5>Clients</h5>
-              <small>200+ worldwide</small>
-            </article>
+            <a href="#portfolio">
             <article className='about_card'>
               <VscFolder className='about_icon'/>
               <h5>Projects</h5>
-              <small>300+ completed</small>
+             
             </article>
+            </a>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Iusto libero nobis animi, tempora ipsum minus modi repellat omnis aliquam distinctio ullam. 
-            Architecto, blanditiis eligendi assumenda velit mollitia adipisci. Eius, eum.
+           I am a self-taught front-end developer, I have followed The Odin Project as a course program to learn HTML, CSS, JS and RUBY. During the course I've completed a number of study projects which you can see on thsi sebsite on the Portfolio section below. My work experience consists of mostly project management in construction projects, I  have a Bachelor's degree in real estate economy and a Masters in Project Management.
           </p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>

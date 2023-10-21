@@ -11,7 +11,7 @@
   
 }
 
-:root {
+/* :root {
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
@@ -24,21 +24,41 @@
   --container-widht-sm: 90%;
 
   --transition: all 400ms ease;
+} */
+
+:root {
+  --color-bg: #3A3331 ;
+  --color-bg-variant: #26211E ;
+  --color-primary: #EF6E2E;
+  --color-primary-variant: rgba(255, 202, 77, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+
+  --container-widht-lg: 75%;
+  --container-widht-md: 86%;
+  --container-widht-sm: 90%;
+
+  --transition: all 400ms ease;
 }
 
 html{
   scroll-behavior: smooth;
+  
 }
 
 ::-webkit-scrollbar{
-  display: nones;
+  display: none;
 }
 
 body {
   font-family: 'Raleway', sans-serif;
-  background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
+  background-image: linear-gradient(var(--color-bg) 80%, var(--color-bg-variant)20%);
+  background-size: 1rem 1rem ;
+  background-attachment: fixed;
+  /* background-image:  radial-gradient(var(--color-primary-variant) 2px, transparent 2px);
+  background-size: 50px 50px; */
 }
 
 /* /========General Styles ========== */

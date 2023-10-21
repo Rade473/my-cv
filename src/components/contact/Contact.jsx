@@ -22,6 +22,7 @@ const Contact = () => {
   };
   return (
     <section id='contact'>
+     
       <h5>Get In Touch</h5>
       <h2>Contact me</h2>
       <div className="container contact_container">
@@ -43,12 +44,15 @@ const Contact = () => {
             <a href="tel:+381063474495" >Give me a call</a>
           </article>
         </div>
+       
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Your Name' required />
+          
           <input type="email" name='email' placeholder='Your email' required />
           <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
           <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>
+        <a href="#" className='scroll_up'>Scroll Up</a>
       </div>
     </section>
   )

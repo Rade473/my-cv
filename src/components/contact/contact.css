@@ -43,6 +43,16 @@ form{
   gap: 1.2rem;
 }
 
+.scroll_up {
+  position: absolute;
+  margin-top: 2rem;
+  right: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+
 input, textarea{
   width: 100%;
   padding: 1.5rem;
@@ -62,5 +72,9 @@ input, textarea{
 @media screen and (max-width: 600px) {
   .container.contact_container{
   width: var(--container-widht-sm);
+  }
+
+   .scroll_up{
+    display: none;
   }
 }
