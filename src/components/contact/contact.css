@@ -3,7 +3,9 @@
   display: grid;
   grid-template-columns: 30% 58%;
   gap: 12%;
+  margin-bottom: 5rem;
 }
+
 .contact_options{
   display: flex;
   flex-direction: column;
