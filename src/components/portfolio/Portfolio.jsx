@@ -25,10 +25,46 @@ import CHESSIMG2 from '../../assets/chess2.png'
 import ETCHIMG from '../../assets/etch-a-sketch.png'
 import FLIGHTIMG from '../../assets/flight-booker.png'
 import TICTACIMG from '../../assets/tic-tac-toe.png'
+import MAXIMG1 from '../../assets/maximg1.png'
+import MAXIMG2 from '../../assets/maximg2.png'
+import MAXIMG3 from '../../assets/maximg3.png'
+import VETIMG1 from '../../assets/vetimg1.png'
+import VETIMG2 from '../../assets/vetimg2.png'
+import VETIMG3 from '../../assets/vetimg3.png'
+import LUXORIAIMG1 from '../../assets/luxoriaimg1.png'
+import LUXORIAIMG2 from '../../assets/luxoriaimg2.png'
+import LUXORIAIMG3 from '../../assets/luxoriaimg3.png'
+
+
 
 const data = [
   {
     id:1,
+    image: [MAXIMG1,MAXIMG2, MAXIMG3],
+    title: "Max Fiduciaire",
+    languages: "JS CSS Wordpress",
+    github:null,
+    demo: 'https://maxfid.mc/'
+  },
+  {
+    id:2,
+    image: [VETIMG1,VETIMG2, VETIMG3],
+    title: "Private Veterinarian",
+    languages: "JS CSS Wordpress",
+    github:null,
+    demo: 'https://www.coutantprivatevet.com/'
+  },
+  {
+    id:3,
+    image: [LUXORIAIMG1,LUXORIAIMG2, LUXORIAIMG3],
+    title: "Luxury Interiros",
+    languages: "JS CSS Wordpress",
+    github:null,
+    demo: 'https://www.luxoria.fr/'
+  },
+
+  {
+    id:4,
     image: [TODOIMG,TODOIMG2, TODOIMG3],
     title: "To Do Application",
     languages: "JS CSS",
@@ -37,7 +73,7 @@ const data = [
   },
 
   {
-    id:2,
+    id:5,
     image: [RESTAURANTIMG, RESTAURANTIMG2, RESTAURANTIMG3],
     title: "Restaurant website",
     languages: "JS HTML CSS",
@@ -46,7 +82,7 @@ const data = [
   },
 
   {
-    id:3,
+    id:6,
     image: [SOCIALMEDIAIMG, SOCIALMEDIAIMG2],
     title: "Social network website",
     languages: "RUBY JS HTML CSS",
@@ -54,7 +90,7 @@ const data = [
     demo: null
   },
   {
-    id:4,
+    id:7,
     image: [DASHBOARDIMG],
     title: "Dashboard concept",
     languages: "HTML CSS",
@@ -62,7 +98,7 @@ const data = [
     demo: "https://rade473.github.io/dashboard_project/"
   },
   {
-    id:5,
+    id:8,
     image: [CHESSIMG, CHESSIMG2],
     title: "Chess in terminal",
     languages: "RUBY",
@@ -70,7 +106,7 @@ const data = [
     demo:null
   },
   {
-    id:6,
+    id:9,
     image: [ETCHIMG],
     title: "Etch-a-Sketch",
     languages: "JS HTML CSS",
@@ -78,7 +114,7 @@ const data = [
     demo:'https://rade473.github.io/etch_a_sketch/'
   },
   {
-    id:7,
+    id:10,
     image: [FLIGHTIMG],
     title: "Flight Booker",
     languages: "RUBY JS HTML CSS",
@@ -86,7 +122,7 @@ const data = [
     demo:null
   },
   {
-    id:8,
+    id:11,
     image: [TICTACIMG],
     title: "Tic-Tac-Toe",
     languages: "JS HTML CSS",
@@ -124,11 +160,10 @@ const portfolio = () => {
               )}
             </Swiper>
               <h3>{title}</h3>
-              <h5>Languages:</h5>
-              <p>{languages}</p>
+              <p> {languages} </p>
               <div className="portfolio_item-cta">
-              <a href={github}className='btn'  rel='noreferrer' target='_blank'>Github</a>
-            {demo === null ? null : <a href={demo} className='btn btn-primary' rel='noreferrer' target='_blank'>Live Demo</a> }
+              {github === null ? null : <a href={github}className='btn'  rel='noreferrer' target='_blank'>Github</a>}
+              {demo === null ? null : <a href={demo} className='btn btn-primary' rel='noreferrer' target='_blank'>Live Demo</a> }
               </div>
           </article>
           )

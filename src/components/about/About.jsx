@@ -27,7 +27,7 @@ const About = () => {
             </a>
           </div>
           <p>
-           I am a self-taught front-end developer, I have followed The Odin Project as a course program to learn HTML, CSS, JS and RUBY. During the course I've completed a number of study projects which you can see on thsi sebsite on the Portfolio section below. My work experience consists of mostly project management in construction projects, I  have a Bachelor's degree in real estate economy and a Masters in Project Management.
+           I am a self-taught full-stack developer, with working experience in front-end, helping build websites with unique designs and upload them in WordPress for clients use as CRM. You can see those websites in the Portfolio section below, as well as some study projects that I completed while following The Odin Project as a course program to learn HTML, CSS, JS and RUBY. 
           </p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
